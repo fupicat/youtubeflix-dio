@@ -8,7 +8,7 @@ function shuffleArray(array) {
 document.querySelector("#assistir").onclick = () => window.location = 'https://www.youtube.com/embed/Mwt35SEeR9w?autoplay=1';
 document.querySelector("#info").onclick = () => window.location = `https://mattw.io/youtube-metadata/?url=https%3A%2F%2Fyoutu.be%2FMwt35SEeR9w&submit=true`;
 
-fetch("/videos.json")
+fetch("videos.json")
   .then(response => response.json())
   .then(start);
 
